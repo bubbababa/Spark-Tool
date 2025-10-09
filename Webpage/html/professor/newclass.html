@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Team Formation Tool</title>
+    </head>
+    <body>
+        <h1>Create a New Class</h1>
+        <form>
+            <label for="class_name">Class Name:</label><br>
+            <input type="text" id="class_name" name="class_name" required><br><br>
+
+            <label for="class_code">Class Code:</label><br>
+            <input type="text" id="class_code" name="class_code" required><br><br>
+            
+            <label for="project_input">Projects:</label><br>
+            <input type="text" id="project_input"><br><br>
+            <button type="button" onclick="addProject()">Add</button>
+
+            <ul id="project_list"></ul>
+
+            <input type="hidden" id="projects" name="projects">
+            
+            <input type="submit" value="Create Class">
+        </form>
+        <br>
+        <button onclick="window.location.href='home.html'">Back</button>
+        <script src="../../js/newclass.js"></script>
+    </body>
+</html>
