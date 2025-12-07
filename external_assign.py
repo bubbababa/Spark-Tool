@@ -101,7 +101,7 @@ def assign(data):
         for project_id in projects:
             capacity = capacities[project_id]
             for sec in sections:
-                # List of student whoe wants this project and are in this section
+                # List of student who want this project and are in this section
                 students_in_sec_and_want_project = [student_id for student_id in student_ids if (student_id, project_id, sec) in w]
                 # If no students in this section want this project, force z[(project_id, sec)] = 0
                 if len(students_in_sec_and_want_project) == 0:
