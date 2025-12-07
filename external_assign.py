@@ -187,7 +187,7 @@ def assign(data):
 def main():
     data = json.load(sys.stdin)
     assignments = assign(data)
-    json.dump(assignments, sys.stdout)
+    json.dump(assignments, sys.stdout, indent=2)
 
 
 if __name__ == "__main__":
